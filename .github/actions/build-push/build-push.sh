@@ -68,9 +68,9 @@ if [ "${#semver[@]}" -eq 3 ]; then
   minor="${semver[1]}"
   patch="${semver[2]}"
 
-  tags+=("$DOCKER_REGISTRY/$DOCKER_REPOSITORY:latest-${arch[1]})")
+  tags+=("$DOCKER_REGISTRY/$DOCKER_REPOSITORY:latest-${arch[1]}")
   tags+=("$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$major-${arch[1]}")
-  tags+=("$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$major.$minor-${arch[1]}r")
+  tags+=("$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$major.$minor-${arch[1]}")
   tags+=("$DOCKER_REGISTRY/$DOCKER_REPOSITORY:$major.$minor.$patch-${arch[1]}")
 
   if [ "$platform" = "linux/amd64" ]; then
